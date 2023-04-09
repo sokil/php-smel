@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<ruleset>
+    <rule ref="PSR12" />
+    <arg value="p" />
+    <arg value="s" />
+    <file>src/</file>
+    <file>tests/</file>
+    <config name="ignore_errors_on_exit" value="0"/>
+    <config name="ignore_warnings_on_exit" value="0"/>
+    <rule ref="Generic.NamingConventions.AbstractClassNamePrefix.Missing">
+        <exclude-pattern>src/Collection</exclude-pattern>
+    </rule>
+</ruleset>
